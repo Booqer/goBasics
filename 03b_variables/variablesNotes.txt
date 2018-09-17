@@ -1,0 +1,22 @@
+Variables Notes
+
+Declare, initialize (declare + assign), assign:
+
+Here, var b is declared:
+var b string
+Here var b is initialized and assigned:
+var b string = "cowboy"
+
+Shorthand can do all at once:
+
+b := "cowboy"
+
+Printf can print the type of a variable, for example:
+fmt.Printf("%T", b)
+will output string
+
+when initialized without a value
+var b string
+
+fmt.Printf("%v", b)
+will return an empty string ""

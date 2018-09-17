@@ -1,0 +1,23 @@
+Command notes
+
+$ go run main.go 
+while in the 02b_package/main directory will run the program and should output:
+
+Hello, Go!
+Derek
+
+$ go build 
+while in the 02b_package/main directory will create an executable (.exe) file that can be ran 
+directly from the command line via
+$ ./main.exe
+
+The executable can be removed with 
+$ go clean
+while in the 02b_package/main directory
+
+02b_package/main $ go install
+will place an executable in the goWork/bin directory that then enables that program to be ran from the command line 
+regardless of current working directory. It will also install the required third party packages as a .a file in the pkg directory
+the .a file can also be installed by itself by using
+$ go install
+while in the package directory

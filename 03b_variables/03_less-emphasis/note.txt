@@ -1,0 +1,1 @@
+See https://github.com/GoesToEleven/GolangTraining/tree/master/03_variables/03_less-emphasis

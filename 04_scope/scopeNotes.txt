@@ -1,0 +1,28 @@
+Notes for this section in comments in code, but!
+
+A variable declared outside of a function will have package level scope
+
+A variable declared within a function will have block level scope
+
+Imports have file level scope
+
+Closure:
+
+Inner scopes can use variables from outside
+
+Variables and functions initialized in an inner scope cannot be used in outer scopes
+
+When defining a function inside a function the inner function has to be anonymous, Example:
+increment := func() int {
+  x++ 
+  return x
+}
+
+rather than:
+
+func increment() int {
+  x++ 
+  return x
+}
+
+A func expression is assigning a function to a variable
