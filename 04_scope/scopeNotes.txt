@@ -4,7 +4,7 @@ A variable declared outside of a function will have package level scope
 
 A variable declared within a function will have block level scope
 
-Imports have file level scope
+Imports have file level scope: import "fmt" in every file in which it is used
 
 Closure:
 
