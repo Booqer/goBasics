@@ -12,11 +12,12 @@ func main() {
 			} else if index == len(masterList)-1 {
 				theFinalCountdown++
 				masterList = append(masterList, i)
-				fmt.Println(i, " looks to be a prime. Number: ", theFinalCountdown)
+				// fmt.Println(i, " looks to be a prime. Number: ", theFinalCountdown)
 			}
 		}
 	}
-	fmt.Println(masterList)
+	// fmt.Println(masterList)
+	fmt.Println("The 10001st Prime is: ", masterList[len(masterList)-1])
 }
 
 //  https://projecteuler.net/problem=7
