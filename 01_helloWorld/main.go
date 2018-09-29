@@ -3,5 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello World!")
+	helloWorld := "moo"
+
+	fmt.Println(helloWorld)
+	// fmt.Println(longWinded)
 }
