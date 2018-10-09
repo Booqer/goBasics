@@ -6,11 +6,14 @@ import (
 	"time"
 )
 
-// the function to be run inside a goroutine. It recieves a channel on ch, sleeps for t, then sends t
-// on the channel it recieved
+// the function to be run inside a goroutine. It receives a channel on ch, sleeps for t, then sends t
+// on the channel it received
 func doStuff(t time.Duration, ch <-chan chan time.Duration) {
+	// pulls a value out of the ch argument and assigns it to ac
+	// making ac a chan time.Duration
 	ac := <-ch
 	time.Sleep(t)
+	// push a time.Duration into the ac channel
 	ac <- t
 }
 
@@ -20,7 +23,7 @@ func main() {
 
 	recvCh := make(chan time.Duration)
 
-	// use this to block until all goroutines have reveived the ack and logged
+	// use this to block until all goroutines have received the ack and logged
 	var wg sync.WaitGroup
 
 	// start up 10 doStuff goroutines
